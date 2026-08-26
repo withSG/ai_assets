@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+  <rect x="0" y="440" width="960" height="100" fill="#F0F4F8"/>
+  <line x1="0" y1="440" x2="960" y2="440" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="480" y="45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="bold" fill="#1E293B" text-anchor="middle">모델 양자화 (Quantization)</text>
+
+  <!-- Left: 16 bit Model (Heavy Stack of Books) -->
+  <g id="left-stack">
+    <!-- Server Rack / Base -->
+    <rect x="70" y="410" width="220" height="30" rx="4" fill="#64748B"/>
+    <rect x="80" y="420" width="10" height="10" rx="2" fill="#38BDF8"/>
+    <rect x="98" y="420" width="10" height="10" rx="2" fill="#38BDF8"/>
+    <text x="260" y="430" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="end">서버 서버</text>
+
+    <!-- Stack of Heavy Books -->
+    <!-- Book 1 -->
+    <rect x="70" y="370" width="220" height="40" rx="6" fill="#4C72B0"/>
+    <rect x="70" y="370" width="20" height="40" rx="4" fill="#3B5998"/>
+    <line x1="95" y1="390" x2="280" y2="390" stroke="#FFFFFF" stroke-dasharray="4,4" stroke-width="2"/>
+    
+    <!-- Book 2 -->
+    <rect x="65" y="325" width="230" height="40" rx="6" fill="#DD8452"/>
+    <rect x="65" y="325" width="20" height="40" rx="4" fill="#C06C38"/>
+    <line x1="90" y1="345" x2="285" y2="345" stroke="#FFFFFF" stroke-dasharray="4,4" stroke-width="2"/>
+
+    <!-- Book 3 -->
+    <rect x="75" y="280" width="210" height="40" rx="6" fill="#55A868"/>
+    <rect x="75" y="280" width="20" height="40" rx="4" fill="#408850"/>
+    <line x1="100" y1="300" x2="275" y2="300" stroke="#FFFFFF" stroke-dasharray="4,4" stroke-width="2"/>
+
+    <!-- Book 4 -->
+    <rect x="68" y="235" width="224" height="40" rx="6" fill="#8172B3"/>
+    <rect x="68" y="235" width="20" height="40" rx="4" fill="#68599A"/>
+    <line x1="93" y1="255" x2="282" y2="255" stroke="#FFFFFF" stroke-dasharray="4,4" stroke-width="2"/>
+
+    <!-- Book 5 (Top) -->
+    <rect x="72" y="190" width="216" height="40" rx="6" fill="#C44E52"/>
+    <rect x="72" y="190" width="20" height="40" rx="4" fill="#A8383C"/>
+    <line x1="97" y1="210" x2="278" y2="210" stroke="#FFFFFF" stroke-dasharray="4,4" stroke-width="2"/>
+
+    <!-- Weight Badge -->
+    <rect x="105" y="115" width="150" height="60" rx="10" fill="#1E293B"/>
+    <text x="180" y="145" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">16 bit 모델</text>
+    <text x="180" y="165" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" fill="#94A3B8" text-anchor="middle">140 GB (70B)</text>
+    
+    <!-- Warning/Heavy Subtext -->
+    <text x="180" y="475" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#64748B" text-anchor="middle">거대 기업용 데이터센터 필요</text>
+  </g>
+
+  <!-- Middle: Quantization Arrow -->
+  <g id="middle-arrow">
+    <path d="M 340 260 L 520 260 L 520 230 L 600 285 L 520 340 L 520 310 L 340 310 Z" fill="#4C72B0"/>
+    <text x="460" y="292" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">양자화 (4 bit)</text>
+    <text x="460" y="370" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#DD8452" text-anchor="middle">용량 75% 압축</text>
+    <text x="460" y="395" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" fill="#64748B" text-anchor="middle">(성능 손실 최소화)</text>
+  </g>
+
+  <!-- Right: 4 bit Model on Gaming GPU -->
+  <g id="right-gpu">
+    <!-- GPU Card Body -->
+    <rect x="670" y="360" width="220" height="65" rx="8" fill="#334155"/>
+    <rect x="655" y="380" width="15" height="25" rx="2" fill="#94A3B8"/>
+    <!-- PCIe Pins -->
+    <rect x="700" y="425" width="160" height="10" fill="#D97706"/>
+    <!-- GPU Fans -->
+    <circle cx="725" cy="392" r="22" fill="#1E293B" stroke="#475569" stroke-width="3"/>
+    <circle cx="725" cy="392" r="6" fill="#94A3B8"/>
+    <circle cx="780" cy="392" r="22" fill="#1E293B" stroke="#475569" stroke-width="3"/>
+    <circle cx="780" cy="392" r="6" fill="#94A3B8"/>
+    <circle cx="835" cy="392" r="22" fill="#1E293B" stroke="#475569" stroke-width="3"/>
+    <circle cx="835" cy="392" r="6" fill="#94A3B8"/>
+
+    <!-- Small Pocket-sized Booklet sitting on GPU -->
+    <rect x="720" y="270" width="120" height="80" rx="8" fill="#55A868"/>
+    <rect x="720" y="270" width="14" height="80" rx="4" fill="#3B7A4A"/>
+    <!-- Bookmark strap -->
+    <rect x="780" y="270" width="12" height="35" fill="#C44E52"/>
+
+    <!-- Label on Pocket Book -->
+    <text x="780" y="315" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4 bit 모델</text>
+    <text x="780" y="338" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#E2E8F0" text-anchor="middle">35 GB</text>
+
+    <!-- GPU Text Badge -->
+    <rect x="705" y="200" width="150" height="50" rx="8" fill="#F8FAFC" stroke="#55A868" stroke-width="3"/>
+    <text x="780" y="231" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#15803D" text-anchor="middle">게이밍 GPU</text>
+
+    <text x="780" y="475" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#1E293B" text-anchor="middle">개인 PC 구동 가능!</text>
+  </g>
+
+  <!-- Bottom Message Banner -->
+  <rect x="230" y="490" width="500" height="36" rx="18" fill="#E2E8F0"/>
+  <text x="480" y="514" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">"동일한 모델이 훨씬 가벼워져 일반 사용자 GPU에 탑재됩니다."</text>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#FFFFFF"/>
+
+  <!-- Title & Subtitle -->
+  <text x="480" y="45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="bold" fill="#2B2D42" text-anchor="middle">LLM.int8() 혼합 정밀도 행렬 곱셈 원리</text>
+
+  <!-- Main Background Container -->
+  <rect x="30" y="70" width="900" height="410" rx="16" fill="#F8F9FA" stroke="#E9ECEF" stroke-width="2"/>
+
+  <!-- Lane Labels / Areas -->
+  <!-- Upper Lane: FP16 -->
+  <rect x="50" y="90" width="860" height="150" rx="12" fill="#EDF2F7" stroke="#CBD5E0" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <rect x="65" y="105" width="140" height="32" rx="6" fill="#DD8452"/>
+  <text x="135" y="126" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FP16 계산 경로</text>
+
+  <!-- Lower Lane: INT8 -->
+  <rect x="50" y="270" width="860" height="150" rx="12" fill="#EBF8FF" stroke="#BEE3F8" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <rect x="65" y="285" width="140" height="32" rx="6" fill="#4C72B0"/>
+  <text x="135" y="306" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">INT8 계산 경로</text>
+
+  <!-- Lower Conveyor Belt Structure -->
+  <rect x="80" y="375" width="600" height="20" rx="10" fill="#A0AEC0"/>
+  <line x1="80" y1="385" x2="680" y2="385" stroke="#718096" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle cx="100" cy="385" r="7" fill="#4A5568"/>
+  <circle cx="660" cy="385" r="7" fill="#4A5568"/>
+
+  <!-- Upper Conveyor Belt Structure -->
+  <rect x="340" y="195" width="340" height="20" rx="10" fill="#A0AEC0"/>
+  <line x1="340" y1="205" x2="680" y2="205" stroke="#718096" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle cx="360" cy="205" r="7" fill="#4A5568"/>
+  <circle cx="660" cy="205" r="7" fill="#4A5568"/>
+
+  <!-- Input Data Stream (Combined Input Label at Start) -->
+
+  <!-- Standard INT8 Boxes on Lower Belt -->
+  <g fill="#63B3ED" stroke="#3182CE" stroke-width="2">
+    <rect x="90" y="340" width="32" height="32" rx="6"/>
+    <rect x="130" y="340" width="32" height="32" rx="6"/>
+    <rect x="170" y="340" width="32" height="32" rx="6"/>
+    <rect x="210" y="340" width="32" height="32" rx="6"/>
+    <!-- Passing through gate -->
+    <rect x="470" y="340" width="32" height="32" rx="6"/>
+    <rect x="510" y="340" width="32" height="32" rx="6"/>
+    <rect x="550" y="340" width="32" height="32" rx="6"/>
+  </g>
+
+  <!-- INT8 Group Label -->
+  <rect x="100" y="402" width="130" height="26" rx="13" fill="#E2E8F0"/>
+  <text x="165" y="420" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#2C5282" text-anchor="middle">보통 값 (99.9%)</text>
+
+  <!-- Outlier Detection Zone / Separator -->
+  <path d="M 270 320 L 270 395" stroke="#C44E52" stroke-width="3" stroke-dasharray="4 4"/>
+  <text x="440" y="290" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#C44E52" text-anchor="middle">튀는 값 감지 → 위로</text>
+
+  <!-- Robot Arm lifting Outlier -->
+  <!-- Base & Joints -->
+  <rect x="280" y="240" width="16" height="40" rx="4" fill="#718096"/>
+  <circle cx="288" cy="240" r="10" fill="#4A5568"/>
+  <path d="M 288 240 L 320 170" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="320" cy="170" r="8" fill="#2D3748"/>
+  <path d="M 320 170 L 350 160" stroke="#4A5568" stroke-width="6" stroke-linecap="round"/>
+  <!-- Suction/Claw Head -->
+  <path d="M 345 150 L 355 170" stroke="#DD8452" stroke-width="4"/>
+
+  <!-- Motion Path (Dotted Arrow) -->
+  <path d="M 260 335 Q 260 160 340 160" fill="none" stroke="#DD8452" stroke-width="3" stroke-dasharray="6 4"/>
+  <polygon points="338,154 350,160 340,168" fill="#DD8452"/>
+
+  <!-- Huge Outlier Box (FP16) -->
+  <g transform="translate(355, 130)">
+    <rect x="0" y="0" width="75" height="60" rx="8" fill="#DD8452" stroke="#C05621" stroke-width="3"/>
+    <text x="37" y="28" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">튀는 값</text>
+    <text x="37" y="48" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">(outlier)</text>
+  </g>
+
+  <!-- INT8 Processing Gate -->
+  <g transform="translate(380, 310)">
+    <rect x="0" y="0" width="70" height="70" rx="10" fill="#4C72B0" stroke="#2B6CB0" stroke-width="2"/>
+    <rect x="10" y="10" width="50" height="50" rx="6" fill="#3182CE"/>
+    <text x="35" y="33" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">INT8</text>
+    <text x="35" y="53" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">계산</text>
+  </g>
+
+  <!-- FP16 Processing Gate -->
+  <g transform="translate(480, 125)">
+    <rect x="0" y="0" width="70" height="70" rx="10" fill="#DD8452" stroke="#C05621" stroke-width="2"/>
+    <rect x="10" y="10" width="50" height="50" rx="6" fill="#DD6B20"/>
+    <text x="35" y="33" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FP16</text>
+    <text x="35" y="53" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">계산</text>
+  </g>
+
+  <!-- Merge Arrows -->
+  <!-- FP16 Route to Merge -->
+  <path d="M 560 160 L 680 160 Q 720 160 720 220 L 720 260" fill="none" stroke="#DD8452" stroke-width="4"/>
+  <!-- INT8 Route to Merge -->
+  <path d="M 600 355 L 680 355 Q 720 355 720 300 L 720 260" fill="none" stroke="#4C72B0" stroke-width="4"/>
+
+  <!-- Merge Station / Final Output Box -->
+  <g transform="translate(660, 220)">
+    <rect x="0" y="0" width="120" height="90" rx="12" fill="#55A868" stroke="#2F855A" stroke-width="3"/>
+    <text x="60" y="40" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">합치기</text>
+    <text x="60" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#E6FFFA" text-anchor="middle">(복원 및 합산)</text>
+  </g>
+
+  <!-- Final Output Arrow -->
+  <path d="M 785 265 L 830 265" fill="none" stroke="#2F855A" stroke-width="4"/>
+  <polygon points="825,257 840,265 825,273" fill="#2F855A"/>
+
+  <!-- Final Result Tag -->
+  <rect x="800" y="290" width="80" height="30" rx="6" fill="#C6F6D5"/>
+  <text x="840" y="311" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#22543D" text-anchor="middle">출력 결과</text>
+
+  <!-- Bottom Caption / Threshold Info Box -->
+  <rect x="280" y="445" width="400" height="40" rx="20" fill="#EDF2F7" stroke="#CBD5E0" stroke-width="2"/>
+  <text x="480" y="471" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#C44E52" text-anchor="middle">기준: 크기 6.0 이상이면 따로 처리</text>
+</svg>
