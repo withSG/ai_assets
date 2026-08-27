@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+
+  <text x="480" y="45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="bold" fill="#333333" text-anchor="middle">AI 챌린지 베이스라인 v4 한눈에 보기</text>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#A0AAB5"/>
+    </marker>
+  </defs>
+
+  <!-- Connecting Arrows -->
+  <line x1="160" y1="180" x2="188" y2="180" stroke="#A0AAB5" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="310" y1="180" x2="338" y2="180" stroke="#A0AAB5" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="180" x2="488" y2="180" stroke="#A0AAB5" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="610" y1="180" x2="638" y2="180" stroke="#A0AAB5" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="760" y1="180" x2="788" y2="180" stroke="#A0AAB5" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 1: CSV + 사진 -->
+  <g transform="translate(40, 90)">
+    <rect width="120" height="180" rx="10" ry="10" fill="#F4F6F9" stroke="#4C72B0" stroke-width="2"/>
+    <!-- Icons -->
+    <g transform="translate(25, 25)">
+      <!-- CSV / Table Icon -->
+      <rect x="0" y="0" width="30" height="36" fill="#FFFFFF" stroke="#4C72B0" stroke-width="1.5" rx="3"/>
+      <line x1="0" y1="12" x2="30" y2="12" stroke="#4C72B0" stroke-width="1.5"/>
+      <line x1="0" y1="24" x2="30" y2="24" stroke="#4C72B0" stroke-width="1.5"/>
+      <line x1="15" y1="12" x2="15" y2="36" stroke="#4C72B0" stroke-width="1.5"/>
+      <!-- Photo Icon (Bottles) -->
+      <rect x="40" y="0" width="30" height="36" fill="#FFFFFF" stroke="#4C72B0" stroke-width="1.5" rx="3"/>
+      <rect x="46" y="6" width="6" height="6" fill="#DD8452" rx="1"/>
+      <rect x="47" y="12" width="4" height="18" fill="#55A868" rx="1"/>
+      <rect x="56" y="9" width="6" height="3" fill="#DD8452" rx="1"/>
+      <rect x="57" y="12" width="4" height="18" fill="#4C72B0" rx="1"/>
+    </g>
+    <text x="60" y="115" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#333333" text-anchor="middle">CSV + 사진</text>
+  </g>
+
+  <!-- Box 2: 프로세서 -->
+  <g transform="translate(190, 90)">
+    <rect width="120" height="180" rx="10" ry="10" fill="#EAEFF7" stroke="#4C72B0" stroke-width="2"/>
+    <text x="60" y="55" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#4C72B0" text-anchor="middle">프로세서</text>
+    <line x1="15" y1="75" x2="105" y2="75" stroke="#4C72B0" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="60" y="105" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">글 → 토큰</text>
+    <text x="60" y="135" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">사진 → 시각 토큰</text>
+  </g>
+
+  <!-- Box 3: Qwen2.5-VL (4bit) -->
+  <g transform="translate(340, 90)">
+    <rect width="120" height="180" rx="10" ry="10" fill="#F0EDF7" stroke="#8172B3" stroke-width="2"/>
+    <!-- LoRA Badge -->
+    <rect x="25" y="15" width="70" height="24" rx="12" ry="12" fill="#DD8452"/>
+    <text x="60" y="32" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">+ LoRA</text>
+    <text x="60" y="85" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="17" font-weight="bold" fill="#8172B3" text-anchor="middle">Qwen2.5-VL</text>
+    <text x="60" y="115" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#8172B3" text-anchor="middle">(4bit)</text>
+  </g>
+
+  <!-- Box 4: 학습 -->
+  <g transform="translate(490, 90)">
+    <rect width="120" height="180" rx="10" ry="10" fill="#EAF5ED" stroke="#55A868" stroke-width="2"/>
+    <text x="60" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#55A868" text-anchor="middle">학습</text>
+    <line x1="15" y1="85" x2="105" y2="85" stroke="#55A868" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="60" y="115" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">정답 글자만</text>
+    <text x="60" y="138" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">배우기</text>
+  </g>
+
+  <!-- Box 5: 추론 -->
+  <g transform="translate(640, 90)">
+    <rect width="120" height="180" rx="10" ry="10" fill="#FDF3E7" stroke="#DD8452" stroke-width="2"/>
+    <text x="60" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#DD8452" text-anchor="middle">추론</text>
+    <line x1="15" y1="85" x2="105" y2="85" stroke="#DD8452" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="60" y="115" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">a / b / c / d</text>
+    <text x="60" y="138" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#555555" text-anchor="middle">한 글자</text>
+  </g>
+
+  <!-- Box 6: submission.csv -->
+  <g transform="translate(790, 90)">
+    <rect width="130" height="180" rx="10" ry="10" fill="#FBF0F0" stroke="#C44E52" stroke-width="2"/>
+    <!-- Document Icon -->
+    <g transform="translate(48, 25)">
+      <path d="M 0 0 L 22 0 L 34 12 L 34 42 L 0 42 Z" fill="#FFFFFF" stroke="#C44E52" stroke-width="1.5"/>
+      <path d="M 22 0 L 22 12 L 34 12" fill="none" stroke="#C44E52" stroke-width="1.5"/>
+      <line x1="7" y1="18" x2="27" y2="18" stroke="#C44E52" stroke-width="1.5"/>
+      <line x1="7" y1="26" x2="27" y2="26" stroke="#C44E52" stroke-width="1.5"/>
+      <line x1="7" y1="34" x2="20" y2="34" stroke="#C44E52" stroke-width="1.5"/>
+    </g>
+    <text x="65" y="110" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#C44E52" text-anchor="middle">submission.csv</text>
+  </g>
+
+  <!-- Bottom Bracket spanning Boxes 2 to 4 -->
+  <g transform="translate(190, 300)">
+    <!-- Bracket path: from X=0 to X=420, center at 210 -->
+    <path d="M 0 0 L 0 20 L 200 20 L 210 32 L 220 20 L 420 20 L 420 0" fill="none" stroke="#8172B3" stroke-width="2" stroke-linecap="round"/>
+    <!-- Bracket Label Box -->
+    <rect x="80" y="45" width="260" height="40" rx="8" ry="8" fill="#F0EDF7" stroke="#8172B3" stroke-width="1.5"/>
+    <text x="210" y="71" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#8172B3" text-anchor="middle">이미 배운 것: 3-2, 5-1, 5-2</text>
+  </g>
+</svg>

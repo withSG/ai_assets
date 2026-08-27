@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="480" y="45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="bold" fill="#2B303A" text-anchor="middle">QLoRA = 4bit 로 얼린 본체 + 작은 LoRA 만 학습</text>
+
+  <!-- Legend Box (Left) -->
+  <rect x="50" y="180" width="230" height="180" rx="12" ry="12" fill="#F8F9FA" stroke="#E9ECEF" stroke-width="2"/>
+  <text x="70" y="215" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#333333">범례</text>
+  
+  <rect x="70" y="240" width="20" height="20" rx="4" ry="4" fill="#6C757D"/>
+  <text x="100" y="256" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057">동결 파라미터 3.75 B</text>
+  
+  <rect x="70" y="290" width="20" height="20" rx="4" ry="4" fill="#DD8452"/>
+  <text x="100" y="306" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#DD8452">학습 파라미터 18.6 M</text>
+  <text x="100" y="328" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#DD8452">(0.49 %)</text>
+
+  <!-- Main Model Container (Center) -->
+  <rect x="310" y="80" width="280" height="430" rx="16" ry="16" fill="#E9ECEF" stroke="#CED4DA" stroke-width="2"/>
+  <text x="450" y="112" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#212529" text-anchor="middle">Qwen2.5-VL 본체 (4bit, 동결 🔒)</text>
+
+  <!-- Upper Region: Vision Block -->
+  <rect x="325" y="130" width="250" height="150" rx="10" ry="10" fill="#DEE2E6"/>
+  <text x="450" y="158" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#495057" text-anchor="middle">비전 블록 × 32</text>
+  
+  <!-- Vision Block Bars -->
+  <rect x="340" y="172" width="220" height="22" rx="4" fill="#ADB5BD"/>
+  <text x="450" y="188" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">attn (이름 달라 제외)</text>
+  
+  <rect x="340" y="202" width="220" height="22" rx="4" fill="#4C72B0"/>
+  <text x="450" y="218" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">gate up down (MLP)</text>
+
+  <rect x="340" y="232" width="220" height="22" rx="4" fill="#ADB5BD"/>
+  <text x="450" y="248" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">• • •</text>
+
+  <!-- Lower Region: Language Block -->
+  <rect x="325" y="295" width="250" height="200" rx="10" ry="10" fill="#DEE2E6"/>
+  <text x="450" y="323" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#495057" text-anchor="middle">언어 블록 × 36</text>
+
+  <!-- Language Block Bars -->
+  <rect x="340" y="337" width="220" height="28" rx="4" fill="#4C72B0"/>
+  <text x="450" y="357" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">q  k  v  o</text>
+
+  <rect x="340" y="375" width="220" height="28" rx="4" fill="#4C72B0"/>
+  <text x="450" y="395" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">gate  up  down</text>
+
+  <rect x="340" y="413" width="220" height="22" rx="4" fill="#ADB5BD"/>
+  <text x="450" y="429" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">• • •</text>
+
+  <rect x="340" y="443" width="220" height="28" rx="4" fill="#4C72B0"/>
+  <text x="450" y="463" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">q  k  v  o  /  gate  up  down</text>
+
+  <!-- Connectors & LoRA Adapters (Right Side) -->
+  
+  <!-- Upper LoRA connection -->
+  <line x1="560" y1="213" x2="630" y2="213" stroke="#DD8452" stroke-width="3" stroke-dasharray="4"/>
+  <rect x="630" y="193" width="70" height="40" rx="6" ry="6" fill="#DD8452"/>
+  <text x="665" y="218" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LoRA</text>
+
+  <!-- Upper Note -->
+  <path d="M 560 183 L 710 183" stroke="#8172B3" stroke-width="1.5" stroke-dasharray="3"/>
+  <rect x="700" y="168" width="215" height="30" rx="6" ry="6" fill="#F3F0F7" stroke="#8172B3" stroke-width="1"/>
+  <text x="807" y="189" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#8172B3" text-anchor="middle">attn 은 이름이 달라 제외</text>
+
+  <!-- Lower LoRA connections -->
+  <!-- Connection 1: q k v o -->
+  <line x1="560" y1="351" x2="630" y2="351" stroke="#DD8452" stroke-width="3"/>
+  <rect x="630" y="331" width="70" height="40" rx="6" ry="6" fill="#DD8452"/>
+  <text x="665" y="356" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LoRA</text>
+
+  <!-- Connection 2: gate up down -->
+  <line x1="560" y1="389" x2="630" y2="389" stroke="#DD8452" stroke-width="3"/>
+  <rect x="630" y="369" width="70" height="40" rx="6" ry="6" fill="#DD8452"/>
+  <text x="665" y="394" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LoRA</text>
+
+  <!-- Connection 3: bottom block -->
+  <line x1="560" y1="457" x2="630" y2="457" stroke="#DD8452" stroke-width="3"/>
+  <rect x="630" y="437" width="70" height="40" rx="6" ry="6" fill="#DD8452"/>
+  <text x="665" y="462" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LoRA</text>
+
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+  <text x="480" y="42" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="bold" fill="#2B2B2B" text-anchor="middle">Label Masking (라벨 마스킹) 동작 원리</text>
+  <g transform="translate(140, 110)">
+    <text x="-15" y="32" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#4C72B0" text-anchor="end">input_ids</text>
+    <rect x="0" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="36" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">system</text>
+    <rect x="78" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="114" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">지시문</text>
+    <rect x="156" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="192" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">user</text>
+    <rect x="234" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="270" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">사진×N</text>
+    <rect x="312" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="348" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">질문</text>
+    <rect x="390" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="426" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">보기</text>
+    <rect x="468" y="0" width="72" height="48" rx="6" fill="#4C72B0"/>
+    <text x="504" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">assistant</text>
+    <rect x="546" y="0" width="72" height="48" rx="6" fill="#DD8452"/>
+    <text x="582" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">b</text>
+    <rect x="624" y="0" width="72" height="48" rx="6" fill="#DD8452"/>
+    <text x="660" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">&lt;|im_end|&gt;</text>
+    <rect x="702" y="0" width="72" height="48" rx="6" fill="#8C8C8C"/>
+    <text x="738" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">pad</text>
+  </g>
+  <g transform="translate(140, 230)">
+    <text x="-15" y="32" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#555555" text-anchor="end">labels</text>
+    <rect x="0" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="36" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="78" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="114" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="156" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="192" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="234" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="270" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="312" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="348" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="390" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="426" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="468" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="504" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+    <rect x="546" y="0" width="72" height="48" rx="6" fill="#DD8452"/>
+    <text x="582" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">b</text>
+    <rect x="624" y="0" width="72" height="48" rx="6" fill="#DD8452"/>
+    <text x="660" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">&lt;|im_end|&gt;</text>
+    <rect x="702" y="0" width="72" height="48" rx="6" fill="#E0E0E0"/>
+    <text x="738" y="30" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="15" font-weight="bold" fill="#777777" text-anchor="middle">-100</text>
+  </g>
+  <g transform="translate(140, 320)">
+    <path d="M 120 0 L 120 25 L 270 25 L 270 40" fill="none" stroke="#C44E52" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="270,45 265,37 275,37" fill="#C44E52"/>
+    <rect x="130" y="45" width="280" height="40" rx="8" fill="#FADBD8" stroke="#C44E52" stroke-width="2"/>
+    <text x="270" y="70" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#C44E52" text-anchor="middle">-100 = 채점 안 함 (loss 에서 제외)</text>
+    <path d="M 624 0 L 624 25 L 624 25 L 624 40" fill="none" stroke="#55A868" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="624,45 619,37 629,37" fill="#55A868"/>
+    <rect x="494" y="45" width="260" height="40" rx="8" fill="#D5F5E3" stroke="#55A868" stroke-width="2"/>
+    <text x="624" y="70" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#27AE60" text-anchor="middle">정답 글자 + 끝 토큰만 채점</text>
+  </g>
+  <rect x="80" y="455" width="800" height="48" rx="8" fill="#F4F6F7" stroke="#BDC3C7" stroke-width="1.5"/>
+  <text x="480" y="485" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#333333" text-anchor="middle">[v3→v4] 원본은 labels = input_ids 그대로 → 사진·질문까지 '정답' 으로 배움</text>
+</svg>

@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#FFFFFF"/>
+  <text x="480" y="42" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="bold" fill="#2B303A" text-anchor="middle">그룹 단위 데이터 분할 (Grouped Train/Validation Split)</text>
+
+  <rect x="25" y="70" width="910" height="150" rx="12" fill="#F8F9FA" stroke="#DEE2E6" stroke-width="2"/>
+
+  <g transform="translate(45, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#4C72B0" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#E8EEF5"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#4C72B0"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#4C72B0" text-anchor="middle">A-1</text>
+  </g>
+
+  <g transform="translate(130, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#4C72B0" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#E8EEF5"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#4C72B0"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#4C72B0" text-anchor="middle">A-2</text>
+  </g>
+
+  <g transform="translate(225, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="2"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#F1F3F5"/>
+    <circle cx="35" cy="30" r="14" fill="#6C757D"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#495057" text-anchor="middle">B</text>
+  </g>
+
+  <g transform="translate(310, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#55A868" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#EAF5ED"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#55A868"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#55A868" text-anchor="middle">C-1</text>
+  </g>
+
+  <g transform="translate(395, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#55A868" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#EAF5ED"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#55A868"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#55A868" text-anchor="middle">C-2</text>
+  </g>
+
+  <g transform="translate(490, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="2"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#F1F3F5"/>
+    <polygon points="35,16 47,40 23,40" fill="#6C757D"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#495057" text-anchor="middle">D</text>
+  </g>
+
+  <g transform="translate(575, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#8172B3" stroke-width="2"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#F0EEF7"/>
+    <rect x="23" y="18" width="24" height="24" rx="3" fill="#8172B3"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#8172B3" text-anchor="middle">E</text>
+  </g>
+
+  <g transform="translate(660, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="2"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#F1F3F5"/>
+    <circle cx="35" cy="30" r="14" fill="#6C757D"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" fill="#495057" text-anchor="middle">F</text>
+  </g>
+
+  <g transform="translate(755, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#DD8452" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#FDF0E9"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#DD8452"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#DD8452" text-anchor="middle">G-1</text>
+  </g>
+
+  <g transform="translate(840, 110)">
+    <rect width="70" height="90" rx="8" fill="#FFFFFF" stroke="#DD8452" stroke-width="3"/>
+    <rect x="6" y="6" width="58" height="50" rx="4" fill="#FDF0E9"/>
+    <path d="M 30,36 L 40,36 L 40,24 C 40,21 37,21 37,19 L 37,16 L 33,16 L 33,19 C 33,21 30,21 30,24 Z" fill="#DD8452"/>
+    <rect x="33" y="14" width="4" height="2" fill="#333"/>
+    <text x="35" y="74" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#DD8452" text-anchor="middle">G-2</text>
+  </g>
+
+  <path d="M 80,105 Q 122.5,88 165,105" fill="none" stroke="#4C72B0" stroke-width="2" stroke-dasharray="4,4"/>
+  <rect x="60" y="74" width="124" height="18" rx="5" fill="#4C72B0"/>
+  <text x="122.5" y="87" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">같은 사진 (md5 동일)</text>
+
+  <path d="M 345,105 Q 387.5,88 430,105" fill="none" stroke="#55A868" stroke-width="2" stroke-dasharray="4,4"/>
+  <rect x="325" y="74" width="124" height="18" rx="5" fill="#55A868"/>
+  <text x="387.5" y="87" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">같은 사진 (md5 동일)</text>
+
+  <path d="M 790,105 Q 832.5,88 875,105" fill="none" stroke="#DD8452" stroke-width="2" stroke-dasharray="4,4"/>
+  <rect x="770" y="74" width="124" height="18" rx="5" fill="#DD8452"/>
+  <text x="832.5" y="87" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">같은 사진 (md5 동일)</text>
+
+  <path d="M 360,225 L 360,250 L 370,250 L 370,270 L 350,270 L 350,250 L 360,250" fill="#4C72B0" stroke="none"/>
+  <path d="M 370,255 L 360,275 L 350,255 Z" fill="#4C72B0"/>
+  
+  <path d="M 850,225 L 850,250 L 860,250 L 860,270 L 840,270 L 840,250 L 850,250" fill="#DD8452" stroke="none"/>
+  <path d="M 860,255 L 850,275 L 840,255 Z" fill="#DD8452"/>
+
+  <g transform="translate(25, 280)">
+    <rect width="670" height="180" rx="12" fill="#EBF3FA" stroke="#4C72B0" stroke-width="3"/>
+    <rect x="0" y="0" width="180" height="34" rx="10" fill="#4C72B0"/>
+    <text x="90" y="23" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">학습용 (train)</text>
+    <text x="655" y="25" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#4C72B0" text-anchor="end">총 8개 (80%)</text>
+
+    <g transform="translate(20, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#4C72B0" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#E8EEF5"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#4C72B0"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#4C72B0" text-anchor="middle">A-1</text>
+    </g>
+
+    <g transform="translate(95, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#4C72B0" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#E8EEF5"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#4C72B0"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#4C72B0" text-anchor="middle">A-2</text>
+    </g>
+
+    <g transform="translate(180, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="1.5"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#F1F3F5"/>
+      <circle cx="32.5" cy="26" r="11" fill="#6C757D"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#495057" text-anchor="middle">B</text>
+    </g>
+
+    <g transform="translate(255, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#55A868" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#EAF5ED"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#55A868"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#55A868" text-anchor="middle">C-1</text>
+    </g>
+
+    <g transform="translate(330, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#55A868" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#EAF5ED"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#55A868"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#55A868" text-anchor="middle">C-2</text>
+    </g>
+
+    <g transform="translate(415, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="1.5"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#F1F3F5"/>
+      <polygon points="32.5,15 42.5,35 22.5,35" fill="#6C757D"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#495057" text-anchor="middle">D</text>
+    </g>
+
+    <g transform="translate(490, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#8172B3" stroke-width="1.5"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#F0EEF7"/>
+      <rect x="22.5" y="16" width="20" height="20" rx="2" fill="#8172B3"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#8172B3" text-anchor="middle">E</text>
+    </g>
+
+    <g transform="translate(575, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#ADB5BD" stroke-width="1.5"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#F1F3F5"/>
+      <circle cx="32.5" cy="26" r="11" fill="#6C757D"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#495057" text-anchor="middle">F</text>
+    </g>
+
+    <rect x="15" y="142" width="150" height="26" rx="6" fill="#4C72B0" opacity="0.15"/>
+    <text x="90" y="159" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#4C72B0" text-anchor="middle">A그룹 전체 보유</text>
+
+    <rect x="250" y="142" width="150" height="26" rx="6" fill="#55A868" opacity="0.15"/>
+    <text x="325" y="159" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#55A868" text-anchor="middle">C그룹 전체 보유</text>
+  </g>
+
+  <g transform="translate(715, 280)">
+    <rect width="220" height="180" rx="12" fill="#FDF5F0" stroke="#DD8452" stroke-width="3"/>
+    <rect x="0" y="0" width="160" height="34" rx="10" fill="#DD8452"/>
+    <text x="80" y="23" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">검증용 (valid)</text>
+    <text x="205" y="25" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="14" font-weight="bold" fill="#DD8452" text-anchor="end">2개 (20%)</text>
+
+    <g transform="translate(30, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#DD8452" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#FDF0E9"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#DD8452"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#DD8452" text-anchor="middle">G-1</text>
+    </g>
+
+    <g transform="translate(125, 55)">
+      <rect width="65" height="80" rx="6" fill="#FFFFFF" stroke="#DD8452" stroke-width="2"/>
+      <rect x="5" y="5" width="55" height="42" rx="3" fill="#FDF0E9"/>
+      <path d="M 28,30 L 37,30 L 37,20 C 37,17 34,17 34,15 L 34,13 L 31,13 L 31,15 C 31,17 28,17 28,20 Z" fill="#DD8452"/>
+      <text x="32.5" y="65" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#DD8452" text-anchor="middle">G-2</text>
+    </g>
+
+    <rect x="25" y="142" width="170" height="26" rx="6" fill="#DD8452" opacity="0.15"/>
+    <text x="110" y="159" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" font-weight="bold" fill="#DD8452" text-anchor="middle">G그룹 전체 보유 (분할 안됨)</text>
+  </g>
+
+  <rect x="160" y="480" width="640" height="44" rx="22" fill="#343A40"/>
+  <text x="480" y="508" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">"묶음 단위로 나누면, 검증 점수에 '본 적 있는 사진' 이 섞이지 않습니다"</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <!-- Background -->
+  <rect width="960" height="540" fill="#FFFFFF"/>
+
+  <!-- Main Title -->
+  <text x="480" y="45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="24" font-weight="bold" fill="#2B2B2B" text-anchor="middle">배치 텍스트 생성 시 패딩 방향 비교 (Padding Side)</text>
+
+  <!-- Left Panel: Right Padding (Incorrect) -->
+  <g transform="translate(40, 75)">
+    <!-- Panel Box -->
+    <rect width="425" height="380" rx="12" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Title + Bad Badge -->
+    <text x="25" y="42" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#C44E52">오른쪽 패딩</text>
+    
+    <!-- Red Cross Symbol -->
+    <g transform="translate(165, 26)">
+      <circle cx="12" cy="12" r="14" fill="#FDE8E8"/>
+      <path d="M7 7 L17 17 M17 7 L7 17" stroke="#C44E52" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Grid Container / Slot Area -->
+    <!-- Row 1: 6 tokens -->
+    <g transform="translate(25, 75)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+    </g>
+
+    <!-- Row 2: 4 tokens + 2 pad -->
+    <g transform="translate(25, 130)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+    </g>
+
+    <!-- Row 3: 5 tokens + 1 pad -->
+    <g transform="translate(25, 185)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+    </g>
+
+    <!-- Generation Start Line / Arrow -->
+    <line x1="358" y1="65" x2="358" y2="240" stroke="#DD8452" stroke-width="3" stroke-dasharray="6,4"/>
+    <path d="M358 65 L358 240" stroke="#DD8452" stroke-width="3"/>
+    <polygon points="358,248 352,236 364,236" fill="#DD8452"/>
+    <text x="358" y="58" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="17" font-weight="bold" fill="#DD8452" text-anchor="middle">생성 시작 ↓</text>
+
+    <!-- Problem Explanation Box -->
+    <rect x="25" y="285" width="375" height="65" rx="8" fill="#FDE8E8"/>
+    <text x="40" y="312" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#C44E52">문제점:</text>
+    <text x="40" y="337" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#C44E52">pad 다음에 답을 쓰게 됨 (생성 위치 불일치)</text>
+  </g>
+
+  <!-- Right Panel: Left Padding (Correct) -->
+  <g transform="translate(495, 75)">
+    <!-- Panel Box -->
+    <rect width="425" height="380" rx="12" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Title + Good Badge -->
+    <text x="25" y="42" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#55A868">왼쪽 패딩</text>
+    
+    <!-- Green Check Symbol -->
+    <g transform="translate(145, 26)">
+      <circle cx="12" cy="12" r="14" fill="#E6F4EA"/>
+      <path d="M6 12 L10 16 L18 7" stroke="#55A868" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Grid Container / Slot Area -->
+    <!-- Row 1: 6 tokens -->
+    <g transform="translate(25, 75)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+    </g>
+
+    <!-- Row 2: 2 pad + 4 tokens -->
+    <g transform="translate(25, 130)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+    </g>
+
+    <!-- Row 3: 1 pad + 5 tokens -->
+    <g transform="translate(25, 185)">
+      <rect x="0" y="0" width="50" height="42" rx="6" fill="#CED4DA"/><text x="25" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#495057" text-anchor="middle">pad</text>
+      <rect x="55" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="80" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="110" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="135" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="165" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="190" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="220" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="245" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+      <rect x="275" y="0" width="50" height="42" rx="6" fill="#4C72B0"/><text x="300" y="26" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">토큰</text>
+    </g>
+
+    <!-- Generation Start Line / Arrow -->
+    <line x1="358" y1="65" x2="358" y2="240" stroke="#DD8452" stroke-width="3" stroke-dasharray="6,4"/>
+    <path d="M358 65 L358 240" stroke="#DD8452" stroke-width="3"/>
+    <polygon points="358,248 352,236 364,236" fill="#DD8452"/>
+    <text x="358" y="58" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="17" font-weight="bold" fill="#DD8452" text-anchor="middle">생성 시작 ↓</text>
+
+    <!-- Solution Advantage Box -->
+    <rect x="25" y="285" width="375" height="65" rx="8" fill="#E6F4EA"/>
+    <text x="40" y="312" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" font-weight="bold" fill="#55A868">장점:</text>
+    <text x="40" y="337" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="18" fill="#2E7D32">모든 문장이 같은 자리에서 끝남 (정확한 생성)</text>
+  </g>
+
+  <!-- Bottom Banner Caption -->
+  <rect x="40" y="475" width="880" height="45" rx="8" fill="#8172B3"/>
+  <text x="480" y="504" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">배치로 generate() 할 때는 padding_side = 'left'</text>
+</svg>
